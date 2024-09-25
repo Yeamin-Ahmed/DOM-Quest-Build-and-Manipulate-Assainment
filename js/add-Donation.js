@@ -8,7 +8,7 @@ document.getElementById("add-donation")
 
    
     if (isNaN(addMoney)){
-        alert('টাকা দেন ভাই');
+        alert('FAILD TO ADD MONEY');
         return;
     }
 const balance = getTextValueById('donate-balance1');
@@ -31,7 +31,7 @@ document.getElementById("add-donation").addEventListener("click", function(event
 
     
     if (isNaN(addMoney)) {
-        alert('টাকা দেন ভাই'); 
+        alert('FAILD TO ADD MONEY'); 
         return;
     }
 
@@ -39,7 +39,7 @@ document.getElementById("add-donation").addEventListener("click", function(event
 
     
     if (addMoney > balance) {
-        alert('ভাই তুই কি নিজেরে হাতিম তাই ভাবস');
+        alert('INSUFFICIENT BALANCE');
         return;
     }
 
@@ -87,7 +87,7 @@ document.getElementById("add-donation1")
 
    
     if (isNaN(addMoney)){
-        alert('টাকা দেন ভাই');
+        alert('FAILD TO ADD MONEY');
         return;
     }
 const balance = getTextValueById('donate-balance2');
@@ -110,7 +110,7 @@ document.getElementById("add-donation1").addEventListener("click", function(even
 
     
     if (isNaN(addMoney)) {
-        alert('টাকা দেন ভাই'); 
+        alert('FAILD TO ADD MONEY'); 
         return;
     }
 
@@ -118,7 +118,7 @@ document.getElementById("add-donation1").addEventListener("click", function(even
 
     
     if (addMoney > balance) {
-        alert('ভাই তুই কি নিজেরে হাতিম তাই ভাবস');
+        alert('INSUFFICIENT BALANCE');
         return;
     }
 
@@ -167,7 +167,7 @@ document.getElementById("add-donation2")
 
    
     if (isNaN(addMoney)){
-        alert('টাকা দেন ভাই');
+        alert('faild to add money');
         return;
     }
 const balance = getTextValueById('donate-balance3');
@@ -190,7 +190,7 @@ document.getElementById("add-donation2").addEventListener("click", function(even
 
     
     if (isNaN(addMoney)) {
-        alert('টাকা দেন ভাই'); 
+        alert('faild to add money'); 
         return;
     }
 
@@ -198,7 +198,7 @@ document.getElementById("add-donation2").addEventListener("click", function(even
 
     
     if (addMoney > balance) {
-        alert('ভাই তুই কি নিজেরে হাতিম তাই ভাবস');
+        alert('INSUFFICIENT BALANCE');
         return;
     }
 
