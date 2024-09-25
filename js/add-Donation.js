@@ -45,17 +45,29 @@ document.getElementById("add-donation").addEventListener("click", function(event
    
     const newBalance = balance - addMoney;
     document.getElementById('account-balance').innerText = newBalance; 
+
+    // history
+const  div = document.createElement('div');
+div.classList.add ('text-2xl','font-bold','box-border',);
+
+const historyTime = new Date();
+const formattedDateTime = historyTime.toLocaleString();
+
+div.innerHTML =`
+
+<p>${addMoney} BDT. for Flood at Noakhali, Bangladesh</p>
+<p class = "font-light"><strong>Date:</strong> ${formattedDateTime}</p>
+
+`
+document.getElementById('history-container').appendChild(div);
+
+// else{
+//     alert('gotten')
+// }
+
+
+
+
+
 });
-
-
-function getInputValueById(id) {
-    const inputValue = document.getElementById(id).value; 
-    return ; 
-}
-
-
-function getTextValueById(id) {
-    const textValue = document.getElementById(id).innerText; 
-    return; 
-}
 
